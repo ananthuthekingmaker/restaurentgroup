@@ -1,0 +1,223 @@
+* {
+	box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../images/lady-at-restaurent22.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.htext{
+    font-family: 'Lobster', cursive;
+    color: #000;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+}
+#para{
+    padding: 0px 2em;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+     font-family: cursive;
+}
+p{
+    font-size: 1.3em;
+    padding-bottom: 10px;
+}
+
+.fbox{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box{
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 3em;
+    font-family: cursive;
+}
+main a{
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+}
+.box img{
+    width: 70%;
+}
+.box img:hover{
+    transition: 0.5s;
+	transform: scale(1.1);
+}
+.button{
+    display: block;
+	background-color: #fff;
+	border: none;
+    width: 9em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #000;
+	color: black;
+	padding: 10px 5px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+	cursor: pointer;
+	border-radius: 4px;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);   
+}
+button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.button:hover{
+    background-color: #000;
+    color: #fff;
+}
+#backimg{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/backimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    height: 32em;
+    display: flex;
+    justify-content: space-around;
+}
+#imgtext{
+    font-family: cursive;
+    margin-top: 5em;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    background:rgba(0, 0, 0, 0.7);
+    width: 40%;
+    border-radius: 40px;
+    margin:3em 0em;
+    justify-content: center;
+    align-items: center;
+}
+#form label{
+    color:#fff;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    
+}
+input{
+    border-radius: 10px;
+    
+}
+#imgtext a{
+    text-decoration: none;
+}
+.tbox,.dbox{
+    margin: 10px;
+    width: 70%;
+    justify-content: center;
+    padding: 8px;
+    font-size: 1em;
+}
+form .button{
+    margin: 5px;
+}
+.fbox2{
+   
+    display: flex;
+    justify-content: space-around;
+}
+#image{
+    width: 40%;
+    margin: 10px;
+    margin-right: 2em;
+}
+/*
+ul{
+    width: 40%;
+    margin: 0px;
+}
+ul li{
+    font-family: cursive;
+    padding-top: 1.5em;
+    list-style-position: inside;
+    font-size: 1.3em;
+}
+*/
+h3{
+    font-family: Lobster;
+    text-align: center;
+}
+#mobile{
+    display: none;
+}
+h4{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+ h1{
+   
+    font-size: 40px;
+}
+@media only screen and (max-width: 1024px){
+    .fbox2{
+        flex-direction: column;
+    }
+/*
+    ul{
+        width: 80%;
+        margin-left: 3em;
+    }
+    ul li{
+        margin-bottom: 1em;
+        padding-top: 0.5em;
+    }
+         #image{
+        width: 90%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+*/
+   
+}
+@media only screen and (max-width: 768px){
+    .fbox{
+        flex-direction: column;
+    }
+
+    #backimg{
+        flex-direction: column;
+        height: 35em;
+    }
+    #form{
+        padding-top: 10px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #imgtext{
+        display: none;
+    }
+    #mobile{
+        display: block;
+        text-decoration: underline;
+    }
+    #desktop{
+        display: none;
+    }
+    .box img{
+    width: 60%;
+    }
+}

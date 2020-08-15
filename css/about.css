@@ -1,0 +1,253 @@
+* {
+	box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{ 
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    background: rgba(255,255,255,.1);
+    transition: .5s;
+    width: 100%;
+    height: 90vh;
+    background:url(../images/tim-meyer-.jpg)center/cover;
+    position:relative;
+}
+
+.container{
+      max-width: 100%;
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: row;
+    }
+    .box1{
+     flex: 1;
+      font-family: 'Roboto', sans-serif;
+      margin: 3px;
+      box-sizing: border-box;
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,.3);
+      border-radius: 4px;
+      margin: 20px ;
+    }
+    .box2{
+      flex: 1;
+      font-family: 'Roboto', sans-serif;
+      margin: 3px;
+      box-sizing: border-box;
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,.3);
+      border-radius: 4px;
+      margin: 20px ;
+    }
+    .box3{
+     flex: 1;
+      font-family: 'Roboto', sans-serif;
+      margin: 3px;
+      box-sizing: border-box;
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,.3);
+      border-radius: 4px;
+      margin: 20px ;
+    }
+.icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 700;
+    transition: 1s;  
+}
+.button a{
+    display: inline-block;padding: 10px;20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+}
+h1{
+    font-size: 45px;
+	text-align: center;
+	color:#000;
+        font-family: 'Lobster', cursive;
+}
+.container .box1:nth-child(1) .icon{
+    box-shadow:  0 0 0 0 #484040;
+    background: #484040;
+}
+.container .box1:nth-child(1):hover .icon{
+    box-shadow:  0 0 0 400px #484040;
+    background: #484040;
+}
+.container .box2:nth-child(2) .icon{
+    box-shadow:  0 0 0 0 #06bcb6;
+    background: #06bcb6;
+}
+.container .box2:nth-child(2):hover .icon{
+    box-shadow:  0 0 0 400px #06bcb6;
+    background: #06bcb6;
+}
+.container .box3:nth-child(3) .icon{
+    box-shadow:  0 0 0 0 #484040;
+    background: #484040;
+}
+.container .box3:nth-child(3):hover .icon{
+    box-shadow:  0 0 0 400px #484040;
+    background: #484040;
+}
+.container .box1 .content{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .box1:hover .content{
+    color: #fff;
+}
+.container .box2 .content{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .box2:hover .content{
+    color: #fff;
+}
+.container .box3 .content{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .box3:hover .content{
+    color: #fff;
+}
+.img-gallary{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+  
+
+}
+
+.img-story{
+	padding: 30px 10px;
+}
+
+.img-story img:hover{
+	transition: 0.5s;
+	transform: scale(1.1);
+}
+.story{
+    min-height: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.story-style{
+    display: flex;
+    background: url(../images/story_bg_2.png);
+    background-repeat: no-repeat;
+       background-size: 350px 350px;
+    background-position: 500px 0px;
+    padding-bottom: 100px;
+    
+ 
+  
+}.story-style1{
+    display: flex;
+      background: url(../images/story_bg_1.png)center/cover;
+    background-size: 350px 350px;
+     background-repeat: no-repeat;
+     background-position: 0px 60px;
+       padding-bottom: 100px;
+
+  
+    
+   
+}
+.story-line{
+    display: flex;
+   justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%; 
+    padding-top: 40px;
+    padding-left: 130px;
+     line-height: 2em;
+    font-style: italic;
+    
+}
+.story-line1{
+    display: flex;
+   justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    padding-top: 40px;
+    padding-right: 130px;
+     line-height: 2em;
+    font-style: italic; 
+}
+
+
+@media only screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    .story{
+        flex-direction: column;
+      
+    }
+    .story-style{
+           background-size: 0px 0px;
+        min-height: .01em;
+        padding-bottom: 0;
+    }
+    .story-style1{
+       background-size: 0px 0px; 
+        min-height: .01em;
+        padding-bottom: 0;
+    }
+    .story-line{
+        padding: 0;
+   margin-bottom: 40px;
+       
+        
+
+    }.story-line1{
+        padding: 0px;
+     
+    }
+    .img-story img{
+        
+        
+    }
+    .img-gallary{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+}
+    

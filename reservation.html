@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>reservation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width,initial-scale=1,user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reservation.css">
+    <link rel="stylesheet" type="text/css" href="css/common%20style.css">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+<nav>
+        <a>LOGO</a>
+        <ul>
+          <li><a href="menu.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+        </ul>
+        <a class="material-icons" id="toggle"></a>
+    </nav>
+
+
+    </header>
+
+
+
+    <main>
+        
+            <div class="htext">
+                <h1>WE PROVIDE RESERVATIONS FOR DIFFERENT OCCASIONS</h1>
+            </div>
+            <div id="para">
+                <p>Nowadays, the majority of people prefer to go out knowing that they have a reservation, instead of incurring the risk of not getting a table at the desired place. Making a reservation will guarantee that you will receive your table at the time and place you planned.You will not have to go through the trouble of waiting until a table is available, or being put on a waiting list, or in the worst case, needing to find another place to eat, because the one chosen won’t be able to serve him.Book with us and enjoy your day without any hassle.</p>
+            </div>
+       
+        <div class="htext">
+            <h1>Table Reservation</h1>
+        </div>
+        <div class="fbox">
+            <div class="box">
+                <img src="images/single.jpg" alt="single table booking">
+                <h2>Single Table Booking</h2>
+                <h4>(upto 2 people)</h4>
+                <div><a href="#form" class="button">BOOK NOW</a></div>
+            </div>
+            <div class="box">
+                <img src="images/group.jpg" alt="group table booking">
+                <h2>Group Table booking</h2>
+                <h4>(upto 10 people)</h4>
+                <a href="#form" class="button">BOOK NOW</a>
+            </div>
+        </div>
+        <div class="htext">
+            <h1>Event Reservation</h1>
+        </div>
+        <div class="fbox">
+            <div class="box">
+                <img src="images/bday.jpg" alt="bday booking">
+                <h2>Birthday's Booking</h2>
+                <h4>(upto 30 people)</h4>
+                <a href="#form" class="button">BOOK NOW</a>
+            </div>
+            <div class="box">
+                <img src="images/engagement.jpg" alt="party booking">
+                <h2>Engagement's Booking</h2>
+                <h4>(upto 30 people)</h4>
+                <a href="#form" class="button">BOOK NOW</a>
+            </div>
+        </div>
+        <div id="backimg">
+            <div id="imgtext">
+                <h1>Book Now</h1>
+                <h2>Just fill the form</h2>
+                <p>Have any questions?</p>
+                <a href=contact.html class="button">Contact us</a>
+            </div>
+            <form id="form">
+                <label>RESERVATION FORM</label>
+                <input type=text placeholder="Enter your name" class="tbox" id="name" required>
+                <input type=email placeholder="Enter your Email id" class="tbox" id="email">
+                <input type=text placeholder="Phone number" class="tbox" id="pnum" required>
+                <input type=text placeholder="Reservation date" class="tbox" onfocus="(this.type='date')" id="date" required>
+                <select class="tbox">
+                    <option>Single table</option>
+                    <option>Group table</option>
+                    <option>Birthday's Booking</option>
+                    <option>Engagement's Booking</option>
+                </select>
+                <input type="button" value="Make Reservation" class="button" id="submit">
+            </form>
+        </div>
+        <script>
+            window.onload = function() {
+                document.getElementById("submit").onclick = function() {
+                    var name = document.getElementById("name").value;
+                    var date = document.getElementById("date").value;
+                    var pnum = document.getElementById("pnum").value;
+                    if (name == "" || date == "" || pnum == "") {
+                        alert("Please enter NAME, PHONENUMBER and DATE")
+                    } else {
+                        alert("Reservation successfull for \n" + name + " on " + date + "\nThank You");
+                        document.getElementById("name").value = "";
+                        document.getElementById("date").value = "";
+                        document.getElementById("pnum").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("date").value = "";
+                    }
+                }
+            }
+             window.onload = function() {
+        document.getElementById('toggle').onclick = function() {
+            this.previousElementSibling.classList.toggle('show');
+        }
+    }
+
+        </script>
+        <div class="htext">
+            <h1>On demand services</h1>
+        </div>
+        <div class="fbox2">
+<!--
+            <ul>
+                <li>Popular Bands for Events.</li>
+                <li>Theme parties with decoration according to you.</li>
+                <li>Photographers arrangements.</li>
+                <li>Special single table arrangements for you and your loved one.</li>
+                <li>Photo cake for your Birthday Party.</li>
+            </ul>
+-->
+            <img src="images/collage.jpg" alt="services" id="image">
+        </div>
+        <h3>Want to avail any ondemand service? Just give a call at <a id="mobile" href="tel:888-555-5555">888-555-5555</a><span id="desktop">888-555-5555</span></h3>
+    </main>
+</body>
+
+</html>
